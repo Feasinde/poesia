@@ -5,7 +5,7 @@
 
 Using the [`Scrapy`](https://docs.scrapy.org/en/latest/index.html) Python library, I downloaded ~~13,167~~ 13,148 poems, each one consisting of a title, an author, a body, and a set of related poems.
 
-## `XPath` expressions used for `Scrapy` spider
+### `XPath` expressions used for `Scrapy` spider
 * **Title of the poem**
 `//h2[@class='title-poem']/text()`
 
