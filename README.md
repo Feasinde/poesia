@@ -3,7 +3,7 @@
 ## Extracting the corpus
 [`https://www.poemas-del-alma.com/`](https://www.poemas-del-alma.com/) is a database of anotated poems in Spanish.
 
-Using the [`Scrapy`](https://docs.scrapy.org/en/latest/index.html) Python library, I downloaded 13,167 poems, each one consisting of a title, an author, a body, and a set of related poems.
+Using the [`Scrapy`](https://docs.scrapy.org/en/latest/index.html) Python library, I downloaded ~~13,167~~ 13,148 poems, each one consisting of a title, an author, a body, and a set of related poems.
 
 ## `XPath` expressions used for `Scrapy` spider
 * **Title of the poem**
@@ -20,3 +20,6 @@ Using the [`Scrapy`](https://docs.scrapy.org/en/latest/index.html) Python librar
 
 * **Author URLs for a given letter**
 `//ul[@class="list-poems"]/li/a/@href`
+
+## Building the inverted index
+I tokenised each of the poems and stored the resulting vocabulary as an inverted index, where each term in the vocabulary is associated to a postings lists.
